@@ -13,16 +13,16 @@ public class SimulacionHotel {
         final double probabilidadPA = 0.7;
         final double probabilidadLE = 0.6;
 
-        for (int semana = 1; semana <= 1; semana++){
+        for (int semana = 1; semana <= 7; semana++){
         for (int dia = 1; dia <= dias; dia++){
             System.out.println("Día "+dia);
 
             for(int hora = 1; hora <= horas; hora++){
                 System.out.println("Hora "+hora+":00h");
-            }
-        }
+            
+        
 
-        for (int piso = 1; piso <= pisos; piso++){
+            for (int piso = 1; piso <= pisos; piso++){
             for (int habitacion = 1; habitacion <= habitacionesxpiso; habitacion++){
                 boolean persianaAbierta = random.nextDouble() < probabilidadPA;
                 boolean luzEncendida = random.nextDouble() < probabilidadLE;
@@ -34,9 +34,13 @@ public class SimulacionHotel {
                 }
             }
             System.out.println("-P"+(pisos-piso));
-        }
+            }
 
-        System.out.println("------------------------------------");   
-        }     
+        System.out.println("------------------------------------");  
+        
+        
+        }
+        }
+        }
     }
 }
