@@ -13,7 +13,6 @@ public class SimulacionHotel {
         final double probabilidadPA = 0.7;
         final double probabilidadLE = 0.6;
 
-        for (int semana = 1; semana <= 7; semana++){
         for (int dia = 1; dia <= dias; dia++){
             System.out.println("Día "+dia);
 
@@ -38,6 +37,6 @@ public class SimulacionHotel {
 
             }
         }
-        }
+        
     }
 }
