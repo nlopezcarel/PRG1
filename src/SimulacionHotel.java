@@ -19,22 +19,20 @@ public class SimulacionHotel {
 
             for(int hora = 1; hora <= horas; hora++){
                 System.out.println("Hora "+hora+":00h");
-            
-        
 
-            for (int piso = 1; piso <= pisos; piso++){
-            for (int habitacion = 1; habitacion <= habitacionesxpiso; habitacion++){
-                boolean persianaAbierta = random.nextDouble() < probabilidadPA;
-                boolean luzEncendida = random.nextDouble() < probabilidadLE;
+                for (int piso = 1; piso <= pisos; piso++){
+                for (int habitacion = 1; habitacion <= habitacionesxpiso; habitacion++){
+                    boolean persianaAbierta = random.nextDouble() < probabilidadPA;
+                    boolean luzEncendida = random.nextDouble() < probabilidadLE;
 
-                if (persianaAbierta) {
-                    System.out.println("[]");
-                }else {
-                    System.out.print(luzEncendida? ":[*]:" : ":[º]:");
+                    if (persianaAbierta) {
+                        System.out.println("[]");
+                    }else {
+                        System.out.print(luzEncendida? ":[*]:" : ":[º]:");
+                    }
                 }
-            }
             System.out.println("-P"+(pisos-piso));
-            }
+                }
 
         System.out.println("------------------------------------");  
 
