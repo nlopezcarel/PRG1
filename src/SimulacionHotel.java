@@ -1,10 +1,11 @@
 import  java.util.Random;
 
-public class hotelparcial {
-    
-    Random random = new Random();
+public class SimulacionHotel {
 
     public static void main(String[] args) {
+
+        Random random = new Random();
+
         final int dias = 7;
         final int horas = 24;
         final int pisos = 7;
@@ -12,10 +13,12 @@ public class hotelparcial {
         final double probabilidadPA = 0.7;
         final double probabilidadLE = 0.6;
 
+        for (int semana = 1; semana <= 1; semana++){
         for (int dia = 1; dia <= dias; dia++){
             System.out.println("Día "+dia);
+
             for(int hora = 1; hora <= horas; hora++){
-            System.out.println("Hora "+hora+":00h");
+                System.out.println("Hora "+hora+":00h");
             }
         }
 
@@ -30,16 +33,10 @@ public class hotelparcial {
                     System.out.print(luzEncendida? ":[*]:" : ":[]:");
                 }
             }
+            System.out.println("-P"+(pisos-piso));
         }
 
-       
-            
-                     
-                
-                    
-
-
-        
+        System.out.println("------------------------------------");   
+        }     
     }
-
 }
