@@ -37,9 +37,8 @@ public class SimulacionHotel {
             }
 
         System.out.println("------------------------------------");  
-        
-        
-        }
+
+            }
         }
         }
     }
