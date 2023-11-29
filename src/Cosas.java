@@ -18,5 +18,6 @@ class Cosas {
         unaVariable++;
         otraVariable = unaVariable * 2;
         System.out.println(otraVariable);
+        // hola
     }
 }
