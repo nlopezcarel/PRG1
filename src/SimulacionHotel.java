@@ -30,7 +30,7 @@ public class SimulacionHotel {
                 if (persianaAbierta) {
                     System.out.println("[]");
                 }else {
-                    System.out.print(luzEncendida? ":[*]:" : ":[]:");
+                    System.out.print(luzEncendida? ":[*]:" : ":[º]:");
                 }
             }
             System.out.println("-P"+(pisos-piso));
